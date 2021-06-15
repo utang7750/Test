@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:text="ADD"
         android:onClick="addClick"
+        android:text="ADD"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number2" />
 
@@ -43,8 +43,8 @@
         android:id="@+id/subButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUB"
         android:onClick="subClick"
+        android:text="SUB"
         app:layout_constraintEnd_toStartOf="@+id/mulButton"
         app:layout_constraintStart_toEndOf="@+id/addButton"
         app:layout_constraintTop_toBottomOf="@+id/number2" />
@@ -56,8 +56,8 @@
         android:layout_marginTop="3dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:text="MUL"
         android:onClick="mulClick"
+        android:text="MUL"
         app:layout_constraintEnd_toStartOf="@+id/divButton"
         app:layout_constraintTop_toBottomOf="@+id/number2" />
 
@@ -67,8 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
-        android:text="DIV"
         android:onClick="divClick"
+        android:text="DIV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/number2" />
 
@@ -79,6 +79,30 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number2" />
+        app:layout_constraintTop_toBottomOf="@+id/number2"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:onClick="exitClick"
+        android:text="종료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="리스트"
+        app:layout_constraintBottom_toTopOf="@+id/exitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
